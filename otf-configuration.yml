@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url:jdbc:postgresql://orgwisely.postgres.database.azure.com:5432/postgres?user=postgress@orgwisely&password=C34wKWb9f$tDhE9&sslmode=require
+    hikari:
+      minimumIdle: 5
+      idleTimeout: 11000
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: 'true'
+        enable_lazy_load_no_trans: 'true'
+        format_sql: 'false'
+    hibernate:
+      ddl-auto: none
+who:
+  am:
+    i: tester
+springdoc:
+  api-docs:
+    path: /api-docs
+  use-fqn: 'true'  
