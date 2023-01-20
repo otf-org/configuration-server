@@ -1,5 +1,6 @@
 spring:
   datasource:
+    driver-class-name: org.postgresql.Driver
     username: postgress
     url: jdbc:postgresql://orgwisely.postgres.database.azure.com:5432/postgres?sslmode=require 
     password: C34wKWb9f$tDhE9
